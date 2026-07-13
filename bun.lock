@@ -6,6 +6,7 @@
       "name": "rnrepo-fingerprint-repro",
       "dependencies": {
         "@expo/ui": "~57.0.4",
+        "@rnrepo/expo-config-plugin": "^0.3.4",
         "expo": "~57.0.4",
         "expo-constants": "~57.0.3",
         "expo-device": "~57.0.0",
@@ -341,6 +342,10 @@
     "@react-native/normalize-colors": ["@react-native/normalize-colors@0.86.0", "", {}, "sha512-kG0wfCGghUKlfxkJyyHCDVutWVYWK7/DG58ojA/4v9EfulgF+osuSQmlbNb3rcKX58qutm7JcldSeVLgGFha9g=="],
 
     "@react-native/virtualized-lists": ["@react-native/virtualized-lists@0.86.0", "", { "dependencies": { "invariant": "^2.2.4", "nullthrows": "^1.1.1" }, "peerDependencies": { "@types/react": "^19.2.0", "react": "*", "react-native": "0.86.0" }, "optionalPeers": ["@types/react"] }, "sha512-4/ZLXdf/OSpPDVO0AsQ1SJdRIzt5t9BNQ46QwGgxvX7/cirYR5k8KXctNGGgW8lQo2gZChEfY2zFCZg9nM/jiw=="],
+
+    "@rnrepo/build-tools": ["@rnrepo/build-tools@0.2.0", "", {}, "sha512-5eDpJDChJ+TIMk6ubJlIUNKZjhea10tr5BtOxyMdX71vrHyHDs+fPL+EXmehic1Mo+qh8b6RDZ5JKjNbEnYNAg=="],
+
+    "@rnrepo/expo-config-plugin": ["@rnrepo/expo-config-plugin@0.3.4", "", { "dependencies": { "@expo/config-plugins": "*", "@expo/config-types": "*", "@rnrepo/build-tools": "0.2.0" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-QSPDMdrJpgaaHeZg4ZP4hssiEqSnJeVeOSTAosNljv24gtskbM8jd7dAF2yVFiJKsnXG+Y76IbwQyJJGgR0RrA=="],
 
     "@sinclair/typebox": ["@sinclair/typebox@0.27.10", "", {}, "sha512-MTBk/3jGLNB2tVxv6uLlFh1iu64iYOQ2PbdOSK3NW8JZsmlaOh2q6sdtKowBhfw8QFLmYNzTW4/oK4uATIi6ZA=="],
 

@@ -1,4 +1,31 @@
-# Welcome to your Expo app 👋
+# RNRepo Expo Fingerprint ignore reproduction
+
+This Expo project follows the RNRepo setup documentation:
+
+- `@rnrepo/expo-config-plugin` is installed and registered in `app.json`.
+- `.fingerprintignore` contains the documented `**/.rnrepo-cache` pattern.
+
+The pattern matches an `.rnrepo-cache` directory path, but does not recursively
+exclude its contents from Expo Fingerprint. To reproduce the resulting unstable
+fingerprint locally:
+
+```bash
+bun run repro:fingerprint
+```
+
+The script writes two different versions of a temporary downloaded-artifact
+stand-in below a native dependency's `.rnrepo-cache/Debug` directory. It prints
+two different iOS fingerprint hashes even though `.rnrepo-cache` is listed in
+`.fingerprintignore`, and removes the temporary artifact afterward.
+
+The recursive pattern that would avoid the problem is intentionally not used in
+this reproduction:
+
+```gitignore
+**/.rnrepo-cache/**/*
+```
+
+## Original Expo template documentation
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
