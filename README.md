@@ -1,3 +1,5 @@
+https://github.com/software-mansion/rnrepo/issues/412 Issued fixed!
+
 # RNRepo Expo Fingerprint ignore reproduction
 
 This Expo project follows the RNRepo setup documentation:
