@@ -1,4 +1,4 @@
-https://github.com/software-mansion/rnrepo/issues/412 Issued fixed!
+https://github.com/software-mansion/rnrepo/issues/412 Issue fixed!
 
 # RNRepo Expo Fingerprint ignore reproduction
 
